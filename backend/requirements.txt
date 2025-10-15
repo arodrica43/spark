@@ -1,0 +1,22 @@
+# Core dependencies
+Flask==3.0.0
+Flask-SQLAlchemy==3.1.1
+Flask-Migrate==4.0.5
+Flask-CORS==4.0.0
+Flask-RESTful==0.3.10
+psycopg2-binary==2.9.9
+redis==5.0.1
+python-dotenv==1.0.0
+
+# OpenAPI/Swagger
+flask-smorest==0.42.3
+apispec==6.3.1
+marshmallow==3.20.1
+
+# Database migrations
+alembic==1.13.0
+
+# Utilities
+gunicorn==21.2.0
+celery==5.3.4
+pydantic==2.5.2
