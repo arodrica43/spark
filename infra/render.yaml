@@ -1,0 +1,116 @@
+services:
+  # PostgreSQL Database
+  - type: pserv
+    name: spark-postgres
+    env: docker
+    plan: starter
+    dockerfilePath: ./infra/postgres.Dockerfile
+    envVars:
+      - key: POSTGRES_USER
+        generateValue: true
+      - key: POSTGRES_PASSWORD
+        generateValue: true
+      - key: POSTGRES_DB
+        value: sparkdb
+    disk:
+      name: spark-postgres-data
+      mountPath: /var/lib/postgresql/data
+      sizeGB: 10
+
+  # Redis Cache
+  - type: pserv
+    name: spark-redis
+    env: docker
+    plan: starter
+    dockerfilePath: ./infra/redis.Dockerfile
+    disk:
+      name: spark-redis-data
+      mountPath: /data
+      sizeGB: 1
+
+  # Backend API
+  - type: web
+    name: spark-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    plan: starter
+    healthCheckPath: /api/health/
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: DATABASE_URL
+        fromService:
+          type: pserv
+          name: spark-postgres
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: pserv
+          name: spark-redis
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: PORT
+        value: 5000
+
+  # Frontend
+  - type: web
+    name: spark-frontend
+    env: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    plan: starter
+    buildFilter:
+      paths:
+        - frontend/**
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: API_URL
+        fromService:
+          type: web
+          name: spark-backend
+          property: url
+
+  # Spark Master
+  - type: pserv
+    name: spark-master
+    env: docker
+    dockerfilePath: ./spark-jobs/Dockerfile
+    plan: standard
+    envVars:
+      - key: SPARK_MODE
+        value: master
+      - key: SPARK_MASTER_HOST
+        value: spark-master
+      - key: SPARK_MASTER_PORT
+        value: 7077
+      - key: SPARK_MASTER_WEBUI_PORT
+        value: 8080
+    disk:
+      name: spark-events
+      mountPath: /tmp/spark-events
+      sizeGB: 5
+
+  # Spark Worker
+  - type: pserv
+    name: spark-worker
+    env: docker
+    dockerfilePath: ./spark-jobs/Dockerfile
+    plan: standard
+    envVars:
+      - key: SPARK_MODE
+        value: worker
+      - key: SPARK_MASTER_URL
+        fromService:
+          type: pserv
+          name: spark-master
+          envVarKey: SPARK_MASTER_URL
+      - key: SPARK_WORKER_CORES
+        value: 2
+      - key: SPARK_WORKER_MEMORY
+        value: 2g
+    disk:
+      name: spark-worker-events
+      mountPath: /tmp/spark-events
+      sizeGB: 5

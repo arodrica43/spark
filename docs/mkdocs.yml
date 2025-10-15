@@ -1,0 +1,50 @@
+site_name: Spark Application Documentation
+site_description: Production-ready application with Angular, Flask, and Spark
+site_author: Spark Team
+repo_url: https://github.com/arodrica43/spark
+repo_name: arodrica43/spark
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: light blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Configuration: getting-started/configuration.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Backend: architecture/backend.md
+      - Frontend: architecture/frontend.md
+      - Spark Jobs: architecture/spark-jobs.md
+  - API Documentation:
+      - Endpoints: api/endpoints.md
+      - Authentication: api/authentication.md
+  - Development:
+      - Setup: development/setup.md
+      - Testing: development/testing.md
+      - Deployment: development/deployment.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+
+plugins:
+  - search
+  - mkdocstrings
