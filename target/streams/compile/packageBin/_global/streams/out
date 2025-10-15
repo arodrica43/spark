@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /workspaces/spark/target/scala-2.12/codespaces-spark_2.12-0.1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	App$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /workspaces/spark/target/scala-2.12/classes/App$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	App$$typecreator6$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /workspaces/spark/target/scala-2.12/classes/App$$typecreator6$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	log4j2.properties[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /workspaces/spark/target/scala-2.12/classes/log4j2.properties[0m
+[0m[[0m[0mdebug[0m] [0m[0m	App.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /workspaces/spark/target/scala-2.12/classes/App.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

@@ -5,7 +5,10 @@ object App {
     val spark = SparkSession.builder()
       .appName("Codespaces Spark Hello")
       .master("local[*]")
+      .config("spark.ui.showConsoleProgress", "false")
       .getOrCreate()
+
+    spark.sparkContext.setLogLevel("WARN")
 
     import spark.implicits._
 

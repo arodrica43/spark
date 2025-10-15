@@ -32,3 +32,148 @@ INFO: Unsupported notification method: $/setTrace
 2025.10.15 14:09:22 INFO  no build target found for C:\Users\oscar\OneDrive\Documentos\feina\IVEAEMPA\infra\spark\src\main\scala\App.scala. Using presentation compiler with project's scala-library version: 3.3.6
 oct 15, 2025 2:09:23 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2025.10.15 12:14:05 INFO  Started: Metals version 1.6.2 in folders '/workspaces/spark' for client Visual Studio Code 1.105.0.
+2025.10.15 12:14:11 INFO  no build target found for /workspaces/spark/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:14:12 WARN  no build target for: /workspaces/spark/build.sbt
+2025.10.15 12:14:12 WARN  no build target for: /workspaces/spark/project/plugins.sbt
+2025.10.15 12:14:20 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:17:50 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:17:50 WARN  no build target for: /workspaces/spark/src/main/scala/App.scala
+2025.10.15 12:17:50 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:17:51 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:17:50 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:17:52 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:18:02 WARN  no build target for: /workspaces/spark/src/main/scala/App.scala
+2025.10.15 12:18:02 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:18:02 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:12 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:12 WARN  no build target for: /workspaces/spark/build.sbt
+2025.10.15 12:19:12 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:12 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:12 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:13 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:13 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:13 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:14 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:14 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:15 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:14 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:15 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:16 WARN  no build target for: /workspaces/spark/build.sbt
+2025.10.15 12:19:16 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:16 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:16 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:16 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:16 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:17 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:17 WARN  no build target for: /workspaces/spark/build.sbt
+2025.10.15 12:19:17 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:17 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:17 WARN  no build target for: /workspaces/spark/build.sbt
+2025.10.15 12:19:18 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:18 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:18 WARN  no build target for: /workspaces/spark/build.sbt
+2025.10.15 12:19:18 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:19 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:18 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:19:22 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:20:47 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:20:50 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:26 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:26 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:26 WARN  no build target for: /workspaces/spark/src/main/scala/App.scala
+2025.10.15 12:27:26 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:26 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:26 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:29 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:29 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:29 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:30 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:30 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:30 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:30 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:30 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:31 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:31 WARN  no build target for: /workspaces/spark/src/main/scala/App.scala
+2025.10.15 12:27:31 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:31 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:32 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:32 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:32 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:32 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:33 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:33 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:32 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:34 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:33 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:34 WARN  no build target for: /workspaces/spark/src/main/scala/App.scala
+2025.10.15 12:27:33 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:34 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:34 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:35 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:34 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:35 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:35 WARN  no build target for: /workspaces/spark/src/main/scala/App.scala
+2025.10.15 12:27:36 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:36 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:36 WARN  no build target for: /workspaces/spark/src/main/scala/App.scala
+2025.10.15 12:27:36 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:36 WARN  no build target for: /workspaces/spark/src/main/scala/App.scala
+2025.10.15 12:27:36 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:38 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:38 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:38 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:38 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:38 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Oct 15, 2025 12:27:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 130
+2025.10.15 12:27:38 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:38 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:38 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:38 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:39 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:39 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:39 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:39 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:39 WARN  no build target for: /workspaces/spark/src/main/scala/App.scala
+2025.10.15 12:27:40 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:40 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:40 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:40 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:27:40 INFO  Created report: Optional[file:///workspaces/spark/src/main/scala/App.scala]
+2025.10.15 12:27:40 INFO  empty definition using pc, found symbol in pc: `<none>`. (full report at: "/workspaces/spark/.metals/.reports/metals-full/2025-10-15/r_empty-definition_12-27-40-730.md")
+2025.10.15 12:27:44 WARN  no build target for: /workspaces/spark/src/main/scala/App.scala
+2025.10.15 12:27:44 INFO  no build target found for /workspaces/spark/src/main/scala/App.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:00 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:00 WARN  no build target for: /workspaces/spark/build.sbt
+2025.10.15 12:28:00 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:00 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:00 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:01 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:01 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:05 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:07 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:29 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:30 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:30 INFO  Created report: Optional[file:///workspaces/spark/build.sbt]
+2025.10.15 12:28:30 INFO  empty definition using pc, found symbol in pc:  (full report at: "/workspaces/spark/.metals/.reports/metals-full/2025-10-15/r_empty-definition_12-28-30-301.md")
+2025.10.15 12:28:31 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:31 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:31 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:32 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:33 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:33 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:32 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:33 WARN  no build target for: /workspaces/spark/build.sbt
+2025.10.15 12:28:33 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:33 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:33 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:33 INFO  empty definition using pc, found symbol in pc:  (full report at: "/workspaces/spark/.metals/.reports/metals-full/2025-10-15/r_empty-definition_12-28-30-301.md")
+2025.10.15 12:28:34 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:34 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:35 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:36 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:28:36 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:30:43 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:30:58 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.15 12:31:27 INFO  no build target found for /workspaces/spark/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
