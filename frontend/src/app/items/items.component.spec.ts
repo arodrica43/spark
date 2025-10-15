@@ -48,13 +48,16 @@ describe('ItemsComponent', () => {
     expect(component.loading).toBeFalse();
   });
 
-  it('should handle error when loading items', () => {
+  it('should handle error when loading items', (done) => {
     itemService.getItems.and.returnValue(throwError(() => new Error('Error')));
 
     component.loadItems();
 
-    expect(component.error).toBe('Failed to load items');
-    expect(component.loading).toBeFalse();
+    setTimeout(() => {
+      expect(component.error).toBe('Failed to load items');
+      expect(component.loading).toBeFalse();
+      done();
+    }, 100);
   });
 
   it('should create a new item', () => {
@@ -102,5 +105,92 @@ describe('ItemsComponent', () => {
 
     expect(itemService.deleteItem).not.toHaveBeenCalled();
     expect(component.items.length).toBe(1);
+  });
+
+  it('should edit an item', () => {
+    const item: Item = { id: 1, name: 'Item 1', description: 'Description 1' };
+    
+    component.editItem(item);
+    
+    expect(component.editingItem).toEqual(item);
+    expect(component.editingItem).not.toBe(item); // Should be a copy
+  });
+
+  it('should update an item', () => {
+    const originalItem: Item = { id: 1, name: 'Original', description: 'Original Desc' };
+    const updatedItem: Item = { id: 1, name: 'Updated', description: 'Updated Desc' };
+    const editingData = { id: 1, name: 'Updated', description: 'Updated Desc' };
+    component.items = [originalItem];
+    component.editingItem = editingData;
+    itemService.updateItem.and.returnValue(of(updatedItem));
+
+    component.updateItem();
+
+    expect(itemService.updateItem).toHaveBeenCalledWith(1, editingData);
+    expect(component.items[0]).toEqual(updatedItem);
+    expect(component.editingItem).toBeNull();
+  });
+
+  it('should not update item without id', () => {
+    component.editingItem = { name: 'No ID' };
+    
+    component.updateItem();
+    
+    expect(itemService.updateItem).not.toHaveBeenCalled();
+  });
+
+  it('should cancel edit', () => {
+    component.editingItem = { id: 1, name: 'Editing' };
+    
+    component.cancelEdit();
+    
+    expect(component.editingItem).toBeNull();
+  });
+
+  it('should not delete without id', () => {
+    component.deleteItem(undefined);
+    
+    expect(itemService.deleteItem).not.toHaveBeenCalled();
+  });
+
+  it('should handle error when creating item', (done) => {
+    const newItem: Item = { name: 'New Item', description: 'New Description' };
+    component.newItem = newItem;
+    itemService.createItem.and.returnValue(throwError(() => new Error('Error')));
+
+    component.createItem();
+
+    setTimeout(() => {
+      expect(component.error).toBe('Failed to create item');
+      expect(component.loading).toBeFalse();
+      done();
+    }, 100);
+  });
+
+  it('should handle error when updating item', (done) => {
+    component.editingItem = { id: 1, name: 'Item' };
+    itemService.updateItem.and.returnValue(throwError(() => new Error('Error')));
+
+    component.updateItem();
+
+    setTimeout(() => {
+      expect(component.error).toBe('Failed to update item');
+      expect(component.loading).toBeFalse();
+      done();
+    }, 100);
+  });
+
+  it('should handle error when deleting item', (done) => {
+    spyOn(window, 'confirm').and.returnValue(true);
+    component.items = [{ id: 1, name: 'Item 1' }];
+    itemService.deleteItem.and.returnValue(throwError(() => new Error('Error')));
+
+    component.deleteItem(1);
+
+    setTimeout(() => {
+      expect(component.error).toBe('Failed to delete item');
+      expect(component.loading).toBeFalse();
+      done();
+    }, 100);
   });
 });

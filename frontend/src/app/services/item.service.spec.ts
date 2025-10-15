@@ -58,7 +58,7 @@ describe('ItemService', () => {
     const itemId = 1;
 
     service.deleteItem(itemId).subscribe(response => {
-      expect(response).toBeUndefined();
+      expect(response).toBeNull();
     });
 
     const req = httpMock.expectOne(`${service['apiUrl']}/${itemId}`);
