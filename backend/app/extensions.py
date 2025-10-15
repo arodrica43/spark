@@ -14,7 +14,11 @@ class RedisClient:
     def init_app(self, app):
         """Initialize Redis connection."""
         redis_url = app.config["REDIS_URL"]
-        self.client = redis.from_url(redis_url, decode_responses=True)
+        try:
+            self.client = redis.from_url(redis_url, decode_responses=True)
+        except Exception:
+            # In testing or if Redis is unavailable, continue without cache
+            self.client = None
 
     def get(self, key):
         """Get value from Redis."""
@@ -25,7 +29,11 @@ class RedisClient:
     def set(self, key, value, ex=None):
         """Set value in Redis."""
         if self.client:
-            return self.client.set(key, value, ex=ex)
+            try:
+                return self.client.set(key, value, ex=ex)
+            except Exception:
+                # Fail silently if Redis is unavailable
+                pass
         return None
 
 

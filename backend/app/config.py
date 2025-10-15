@@ -1,6 +1,5 @@
 """Application configuration."""
 import os
-from datetime import timedelta
 
 
 class Config:
@@ -12,7 +11,7 @@ class Config:
     )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
-    
+
     # API Documentation
     API_TITLE = "Spark API"
     API_VERSION = "v1"
@@ -20,7 +19,7 @@ class Config:
     OPENAPI_URL_PREFIX = "/"
     OPENAPI_SWAGGER_UI_PATH = "/swagger-ui"
     OPENAPI_SWAGGER_UI_URL = "https://cdn.jsdelivr.net/npm/swagger-ui-dist/"
-    
+
     # CORS
     CORS_HEADERS = "Content-Type"
 

@@ -8,10 +8,7 @@ from app.models import Item
 
 # Health check blueprint
 health_bp = Blueprint(
-    "health",
-    "health",
-    url_prefix="/api/health",
-    description="Health check endpoints"
+    "health", "health", url_prefix="/api/health", description="Health check endpoints"
 )
 
 
@@ -30,6 +27,7 @@ def health_check():
 # Item schemas
 class ItemSchema(Schema):
     """Item schema for serialization."""
+
     id = fields.Int(dump_only=True)
     name = fields.Str(required=True)
     description = fields.Str()
@@ -39,16 +37,14 @@ class ItemSchema(Schema):
 
 class ItemQueryArgsSchema(Schema):
     """Schema for item query parameters."""
+
     limit = fields.Int(missing=10)
     offset = fields.Int(missing=0)
 
 
 # Items blueprint
 items_bp = Blueprint(
-    "items",
-    "items",
-    url_prefix="/api/items",
-    description="Items management endpoints"
+    "items", "items", url_prefix="/api/items", description="Items management endpoints"
 )
 
 
@@ -74,9 +70,10 @@ def get_items(args):
     """
     limit = args.get("limit", 10)
     offset = args.get("offset", 0)
-    
+
     items = Item.query.limit(limit).offset(offset).all()
-    return [item.to_dict() for item in items]
+    # Return raw objects, marshmallow will serialize them
+    return items
 
 
 @items_bp.route("/<int:item_id>", methods=["GET"])
@@ -96,10 +93,11 @@ def get_item(item_id):
       404:
         description: Item not found
     """
-    item = Item.query.get(item_id)
+    item = db.session.get(Item, item_id)
     if not item:
         abort(404, message="Item not found")
-    return item.to_dict()
+    # Return raw object, marshmallow will serialize it
+    return item
 
 
 @items_bp.route("/", methods=["POST"])
@@ -127,11 +125,12 @@ def create_item(item_data):
     item = Item(**item_data)
     db.session.add(item)
     db.session.commit()
-    
-    # Invalidate cache
+
+    # Cache the new item
     redis_client.set(f"item:{item.id}", str(item.to_dict()), ex=300)
-    
-    return item.to_dict(), 201
+
+    # Return raw object, marshmallow will serialize it
+    return item, 201
 
 
 @items_bp.route("/<int:item_id>", methods=["PUT"])
@@ -163,19 +162,20 @@ def update_item(item_data, item_id):
       404:
         description: Item not found
     """
-    item = Item.query.get(item_id)
+    item = db.session.get(Item, item_id)
     if not item:
         abort(404, message="Item not found")
-    
+
     for key, value in item_data.items():
         setattr(item, key, value)
-    
+
     db.session.commit()
-    
-    # Invalidate cache
+
+    # Update cache
     redis_client.set(f"item:{item.id}", str(item.to_dict()), ex=300)
-    
-    return item.to_dict()
+
+    # Return raw object, marshmallow will serialize it
+    return item
 
 
 @items_bp.route("/<int:item_id>", methods=["DELETE"])
@@ -195,11 +195,11 @@ def delete_item(item_id):
       404:
         description: Item not found
     """
-    item = Item.query.get(item_id)
+    item = db.session.get(Item, item_id)
     if not item:
         abort(404, message="Item not found")
-    
+
     db.session.delete(item)
     db.session.commit()
-    
+
     return "", 204

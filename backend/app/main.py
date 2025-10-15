@@ -21,7 +21,7 @@ def create_app(config_name=None):
     db.init_app(app)
     CORS(app)
     Migrate(app, db)
-    
+
     # Initialize API with OpenAPI support
     api = Api(app)
 
@@ -30,7 +30,7 @@ def create_app(config_name=None):
 
     # Register blueprints
     from app.api import health_bp, items_bp
-    
+
     api.register_blueprint(health_bp)
     api.register_blueprint(items_bp)
 
