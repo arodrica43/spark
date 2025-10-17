@@ -115,9 +115,6 @@ object App {
     // Show the cleaned data
     validDataDF.show(10)
 
-    // Save cleaned data
-    val outputPath = "path/to/save/cleaned-adult-dataset2.csv"
-    dataCleaner.saveData(validDataDF, outputPath)
 
     // Stop Spark session
     spark.stop()
